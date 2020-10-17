@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="hh1">Calculator</div>
+    <div class="form_calc">
+        <div class="header">
+            <div id="output" class="result"></div>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="result" placeholder="0" class="insert" ></input>
+        </div>
+        <div class="allbtn">
+            <button class="btnm" id="delstrok">CE</button>
+            <button class="btnm" id="delall">C</button>
+            <button class="btnm" id="del">D</button>
+            <button class="btnm" id="divide">/</button>
+            <button class="btn" id="seven">7</button>
+            <button class="btn" id="eight">8</button>
+            <button class="btn" id="nine">9</button>
+            <button class="btnm" id="multiply">*</button>
+            <button class="btn" id="four">4</button>
+            <button class="btn" id="five">5</button>
+            <button class="btn" id="six">6</button>
+            <button class="btnm" id="minus">-</button>
+            <button class="btn" id="one">1</button>
+            <button class="btn" id="two">2</button>
+            <button class="btn" id="tree">3</button>
+            <button class="btnm" id="plus">+</button>
+            <button class="btnm" id="plusminus">&#177;</button>
+            <button class="btn" id="zero">0</button>
+            <button class="btnm" id="dot">.</button>
+            <button class="btnm" id="equal">=</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
